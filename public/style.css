@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-v16-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/nunito-v16-latin-ext_latin_cyrillic-ext_cyrillic-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("../fonts/nunito-v16-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("../fonts/nunito-v16-latin-ext_latin_cyrillic-ext_cyrillic-regular.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("../fonts/nunito-v16-latin-ext_latin_cyrillic-ext_cyrillic-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/nunito-v16-latin-ext_latin_cyrillic-ext_cyrillic-regular.svg#Nunito")
+      format("svg"); /* Legacy iOS */
+}
+
+body {
+  font-family: Nunito, Arial, sans-serif;
+  transition: 0.5s;
+}
+
+:root {
+  --black: black;
+  --light: #f8f9fa;
+}
+
+main {
+  min-height: calc(100vh - 32vh);
+}
+
+.footer {
+  height: 7vh;
+}
+
+.b-black {
+  background-color: var(--black);
+}
+
+.b-light {
+  background-color: var(--light);
+}
+
+.t-black {
+  color: var(--black);
+}
+
+.t-light {
+  color: var(--light);
+}
+
+.feather {
+  margin-bottom: 0.17em;
+}
+
+.mode-switcher {
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+}
+
+.purple-gradient {
+  background: linear-gradient(#ab3bf0, #9c38da);
+}
+
+#search {
+  outline: none;
+}
+
+#search-box {
+  outline: none;
+}
+
+.totally-invisible {
+  opacity: 0;
+  filter: opacity(0);
+  visibility: hidden;
+  position: absolute;
+}
+
+#toggleFuzzySearchIcon {
+  color: #b6b6b6;
+  transition: 0.5s;
+}
+
+#toggleFuzzySearch:checked ~ #toggleFuzzySearchIcon {
+  color: #fafafa;
+}
+
+.fade-in {
+  animation: fadeIn 0.35s linear 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    filter: opacity(0);
+  }
+  to {
+    opacity: 100;
+    filter: opacity(100);
+  }
+}
+
+.flex-break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+.theme-switcher {
+  width: 4rem;
+  height: 4rem;
+  bottom: 0;
+  right: 0;
+  margin: 4.5rem;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  transition: 0.5s;
+}
+
+.text-black {
+  color: black;
+}
